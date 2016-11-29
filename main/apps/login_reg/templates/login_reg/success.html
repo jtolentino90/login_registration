@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Success!</title>
+</head>
+<body>
+  <h1> Successfully logged in! </h1>
+  <p> Welcome, {{request.session.user.first_name}} !</p>
+  <p> You've successfully logged in! </p>
+  <a href="{% url 'logout' %}">Logout</a>
+</body>
+</html>
